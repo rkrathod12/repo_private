@@ -7,4 +7,4 @@ jobs:
       arch: amd64
       dist: focal
       script:
-        - python hello_world.py
+       - python hello_world.py
