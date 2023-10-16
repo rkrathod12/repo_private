@@ -1,10 +1,12 @@
-jobs:
-  include:
-    - os: linux
-      language: python
-      python:
-       - "3.8"
-      arch: amd64
-      dist: focal
-      script:
-       - python hello_world.py
+language: node_js
+node_js:
+  - 14  # Use Node.js 14
+  - 16  # Use Node.js 16
+
+install:
+  - npm install  # Install project dependencies
+
+script:
+  - npm test  # Run tests
+
+# You can add other sections as needed, such as deploy, notifications, etc.
